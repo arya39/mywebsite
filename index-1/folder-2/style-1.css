@@ -1,0 +1,107 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: rgb(202, 255, 255);
+}
+
+.head-1{
+    background-color: transparent;
+    min-height:40px;
+    width: 100%;
+    position: relative;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    background: linear-gradient(110deg, rgb(14, 26, 38) 60%, rgb(123, 123, 123) 60%);
+    height: 100px;
+}
+nav .menulist{
+    flex: 1;
+    text-align: center;
+}
+.menulist ul li{
+    display: inline-block;
+    padding: 3% 3%;
+    position: relative;
+}
+.menulist ul li a{
+    font-size: 20px;
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+    color: rgb(245, 245, 245);
+}
+.menulist ul li::after{
+    content: '';
+    display: block;
+    height:2px;
+    width: 0px;
+    margin: auto;
+    background: rgb(252, 252, 252);
+    transition: 0.5s;
+}
+.menulist ul li:hover::after{
+    width: 100%;
+}
+
+
+/* this is the style code of more-about */
+
+.more-about{
+    /* border: 2px solid black; */
+    min-height: 100vh;
+    width: 85%;
+    margin: auto;
+    text-align: center;
+    margin-top: 80px;
+    position: relative;
+}
+.more-about h2{
+    font-size: 60px;
+    font-family: 'Exo 2', sans-serif;
+}
+.more-1 {
+    display: flex;
+    align-items: center;
+    /* border: 2px solid black; */
+    border-radius: 30px;
+    margin-bottom: 30px;
+    margin-top: 50px;
+    background-color: rgb(87, 87, 87);
+    box-sizing: border-box;
+    position: relative;
+}
+.more-1:hover{
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    transition: 0.5s ease;
+}
+.more-1 img{
+    position: relative;
+    width: 300px;
+    background-color: white;
+    border-radius: 30px 200px 0px 30px;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+.more-1 #img-1{
+    position: relative;
+    border-radius: 200px 30px 30px 0px;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+.more-1 h3,p{
+    text-align: left;
+}
+.more-1 #h3,#p1{
+    text-align: right;
+}
+svg{
+    border-radius: 0px 100px 100px 0px;
+}
+#svg-1{
+    border-radius: 100px 0px 0px 100px;
+}
+
